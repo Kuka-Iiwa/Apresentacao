@@ -1,0 +1,13 @@
+\begin{mintedbox}{python}
+# Valores das distancias (LBR iiwa 14 820)
+dbs, dse, dew, dwf = 360, 420, 400, 90
+
+# Matriz DH:        alfi, ai, di, thetai
+TDH = sp.Matrix([ [-pi/2, 0, dbs, theta1],
+                  [ pi/2, 0,   0, theta2],
+                  [ pi/2, 0, dse, theta3],
+                  [-pi/2, 0,   0, theta4],
+                  [-pi/2, 0, dew, theta5],
+                  [ pi/2, 0,   0, theta6],
+                  [    0, 0, dwf, theta7]])
+\end{mintedbox}

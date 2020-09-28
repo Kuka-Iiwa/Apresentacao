@@ -1,0 +1,13 @@
+\begin{mintedbox}{python}
+# Matriz A de cada linha
+A1 = A.subs({alpha:TDH[0,0],a:TDH[0,1],d:TDH[0,2],theta:TDH[0,3]})
+A2 = A.subs({alpha:TDH[1,0],a:TDH[1,1],d:TDH[1,2],theta:TDH[1,3] })
+A3 = A.subs({alpha:TDH[2,0],a:TDH[2,1],d:TDH[2,2],theta:TDH[2,3] })
+A4 = A.subs({alpha:TDH[3,0],a:TDH[3,1],d:TDH[3,2],theta:TDH[3,3] })
+A5 = A.subs({alpha:TDH[4,0],a:TDH[4,1],d:TDH[4,2],theta:TDH[4,3] })
+A6 = A.subs({alpha:TDH[5,0],a:TDH[5,1],d:TDH[5,2],theta:TDH[5,3] })
+A7 = A.subs({alpha:TDH[6,0],a:TDH[6,1],d:TDH[6,2],theta:TDH[6,3]})
+
+# Matriz de transf. homogenea de 7 para 0
+T = A1*A2*A3*A4*A5*A6*A7
+\end{mintedbox}

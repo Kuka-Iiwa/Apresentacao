@@ -1,0 +1,13 @@
+\begin{mintedbox}{python}
+Rot = sp.Matrix([
+    [cos(theta), -sin(theta)*cos(alpha),  sin(theta)*sin(alpha)],
+    [sin(theta), cos(theta)*cos(alpha), -cos(theta)*sin(alpha)],
+    [ 0, sin(alpha), cos(alpha)]
+                ])
+
+Tran = sp.Matrix([a*cos(theta),a*sin(theta),d])
+S = sp.Matrix([[0, 0, 0, 1]])
+
+# Matriz Ai geral
+A = sp.Matrix.vstack(sp.Matrix.hstack(Rot, Tran), S)
+\end{mintedbox}
